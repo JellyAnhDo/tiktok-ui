@@ -1,0 +1,97 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-width: 500px;
+    --action-width: 305px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    height: var(--default-layout-header-height);
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+}
+
+.inner {
+    height: 100%;
+    width: var(--default-layout-width);
+    padding: 0 var(--default-layout-horizontal-spacer);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+// Action buttons
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.action-more-btn {
+    margin-left: 18px;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 21px;
+    padding: 6px 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.upload-outline-btn {
+    color: var(--text-color) !important;
+    border: 1px solid rgba(22, 24, 35, 0.12) !important;
+    background-color: rgb(255, 255, 255);
+    padding: 6px 16px !important;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03) !important;
+    }
+}
+
+.action-mailbox-btn {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    cursor: pointer;
+    app-region: no-drag;
+}
+
+.action-mailbox-btn .badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: -6px;
+    left: 18px;
+    min-width: 20px;
+    height: 20px;
+    background: rgb(254, 44, 85);
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 18px;
+    border-radius: 10px;
+    -webkit-box-pack: center;
+}
+
+.user-avatar {
+    margin-left: 24px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: center center / cover no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    app-region: no-drag;
+}
